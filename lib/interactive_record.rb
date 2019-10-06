@@ -60,8 +60,9 @@ class InteractiveRecord
 
   def self.find_by(attribute)
     if attribute.values[0].is_a? String
-      sql = "SELECT * FROM #{self.table_name} WHERE #{attribute.keys[0]} = #{attribute.values[0]}"
+      sql = "SELECT * FROM #{self.table_name} WHERE #{attribute.keys[0]} = '#{attribute.values[0]}'"
     else
+      sql = 
   end
 
 end
