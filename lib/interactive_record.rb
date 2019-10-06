@@ -62,7 +62,7 @@ class InteractiveRecord
     if attribute.values[0].is_a? String
       sql = "SELECT * FROM #{self.table_name} WHERE #{attribute.keys[0]} = '#{attribute.values[0]}'"
     else
-      sql = 
+      sql =
   end
 
 end
